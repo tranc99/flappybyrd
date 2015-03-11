@@ -1,6 +1,5 @@
-angular
-    .module('myApp', ['ngAnimate', 'ui.router', 'templates'])
-    .config(($stateProvider, $urlRouterProvider, $locationProvider) ->
+myApp = angular.module('myApp', ['ngAnimate', 'ui.router', 'templates'])
+myApp.config(($stateProvider, $urlRouterProvider, $locationProvider) ->
         
         # routes and states
         $stateProvider
@@ -20,7 +19,7 @@ angular
             # the default route when someone hits dashboard
             .state('dashboard.one', {
                 url: '',
-                templateUrl: 'dahsboard/one.html'
+                templateUrl: 'dashboard/one.html'
                 })
 
             # this is /dashboard/two
