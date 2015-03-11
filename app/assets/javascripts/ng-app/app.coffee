@@ -33,7 +33,7 @@ myApp.config(($stateProvider, $urlRouterProvider, $locationProvider) ->
                 templateUrl: 'dashboard/three.html'
                 })
 
-        $urlRouterProvider.otherwise '/cats'
+        $urlRouterProvider.otherwise '/cats_n_doggs'
 
         #enable HTML5 Mode for SEO
         $locationProvider.html5Mode(true)
